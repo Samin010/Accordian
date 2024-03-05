@@ -35,8 +35,8 @@ function Accordian() {
           >
             <h3>{item.question}</h3>
             {multipleSelection === true
-              ? multipleArr.indexOf(item.id) !== -1 && <div>{item.answer}</div>
-              : selectedId === item.id && <div>{item.answer}</div>}
+              ? multipleArr.indexOf(item.id) !== -1 && <div style={{width:"20vw"}}>{item.answer}</div>
+              : selectedId === item.id && <div style={{width:"20vw"}}>{item.answer}</div>}
           </div>
         );
       })}
